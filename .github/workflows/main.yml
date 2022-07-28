@@ -14,5 +14,6 @@ jobs:
       - name: Run linter
         run: npm run lint
       - name: Run tests
-        env: MY_SECRET_TOKEN:${{ secrets.MY_SECRET_TOKEN }}
+        env:
+          MY_SECRET_TOKEN: ${{ secrets.MY_SECRET_TOKEN }}
         run: npm test
