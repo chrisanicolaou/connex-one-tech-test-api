@@ -1,3 +1,3 @@
-const { getTest } = require('./testrequest');
+const { getEpochTime } = require('./time.controller');
 
-module.exports = { getTest };
+module.exports = { getEpochTime };

@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-const { getTest } = require('./controllers/index');
+const { getEpochTime } = require('./controllers/index');
 require('dotenv').config();
 
 const app = express();
@@ -22,6 +22,6 @@ app.use((req, res, next) => {
   next();
 });
 
-app.get('/api/test', getTest);
+app.get('/api/time', getEpochTime);
 
 module.exports = { app, authHeader };
