@@ -3,19 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
-  "jest": {
-    "transform": {}
-  },
-  "babel": {
-    "env": {
-      "test": {
-        "plugins": [
-          "@babel/plugin-transform-modules-commonjs"
-        ]
-      }
-    }
-  },
   "scripts": {
+    "start": "node listen.js",
     "test": "jest",
     "lint": "npx eslint \"**/*.js\" --ignore-pattern node_modules/",
     "lintfix": "npx eslint \"**/*.js\" --ignore-pattern node_modules/ --fix"
