@@ -2,6 +2,9 @@ const request = require('supertest');
 const parsePrometheusTextFormat = require('parse-prometheus-text-format');
 const { app, authHeader } = require('../app');
 
+/*
+Test suite using Jest with Supertest.
+*/
 describe('GET: /api/time', () => {
   test('200: Provided the correct authorisation token, returns correct current system time in Epoch seconds', () => {
     jest.useFakeTimers().setSystemTime(new Date('2022-07-29'));

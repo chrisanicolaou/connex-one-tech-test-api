@@ -1,3 +1,7 @@
+#
+# Using GitHub Actions, runs the linter and test suite on every
+# push. Despite my limited experience with GitHub Actions & CI/CD
+# in general, I wanted to take the opportunity to learn something new.
 name: Main
 on: push
 jobs:
